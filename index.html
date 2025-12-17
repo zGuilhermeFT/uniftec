@@ -132,30 +132,21 @@
             border-left: 4px solid #667eea;
         }
         
-        .scenarios {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-top: 30px;
-        }
-        
-        .scenario {
+        .scenario-box {
             background: white;
-            border: 3px solid #e2e8f0;
+            border: 3px solid #667eea;
             border-radius: 16px;
-            padding: 35px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-        }
-        
-        .scenario:hover {
-            border-color: #667eea;
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
-            transform: translateY(-5px);
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
         }
         
         .scenario-title {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 700;
             color: #667eea;
             margin-bottom: 20px;
@@ -166,24 +157,24 @@
         
         .scenario-title::before {
             content: '⚡';
-            font-size: 28px;
+            font-size: 32px;
         }
         
         .scenario-description {
-            font-size: 15px;
+            font-size: 16px;
             color: #64748b;
-            margin-bottom: 25px;
-            line-height: 1.6;
-            min-height: 80px;
+            margin-bottom: 30px;
+            line-height: 1.7;
         }
         
         .price {
-            font-size: 48px;
+            font-size: 56px;
             font-weight: 800;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin: 20px 0;
+            margin: 25px 0;
+            text-align: center;
         }
         
         .duration {
@@ -193,12 +184,13 @@
             border-radius: 25px;
             display: inline-block;
             font-weight: 600;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-size: 14px;
         }
         
         .phases {
-            margin-top: 25px;
+            margin-top: 30px;
+            width: 80%;
         }
         
         .phase {
@@ -238,7 +230,8 @@
             color: white;
             padding: 30px;
             border-radius: 12px;
-            margin-top: 20px;
+            margin-top: 25px;
+            text-align: center;
         }
         
         .total-label {
@@ -275,7 +268,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
         
         .feature {
@@ -383,10 +376,6 @@
                 box-shadow: none;
             }
             
-            .scenario:hover {
-                transform: none;
-            }
-            
             .accept-button {
                 display: none;
             }
@@ -397,10 +386,6 @@
         }
         
         @media (max-width: 768px) {
-            .scenarios {
-                grid-template-columns: 1fr;
-            }
-            
             .features {
                 grid-template-columns: 1fr;
             }
@@ -437,7 +422,7 @@
                 
                 <div class="team">
                     <div class="team-title">👥 Equipe de Desenvolvimento</div>
-                    <div class="team-info">2 Desenvolvedores Full Stack especializados em IA e integração de sistemas</div>
+                    <div class="team-info">1 Desenvolvedor Sênior (Especialista N5) + 1 Desenvolvedor Uniftec</div>
                 </div>
             </div>
             
@@ -453,139 +438,71 @@
             </div>
             
             <div class="section">
-                <h2 class="section-title">Cenários de Implementação</h2>
+                <h2 class="section-title">Proposta de Implementação</h2>
                 
-                <div class="scenarios">
-                    <div class="scenario">
-                        <div class="scenario-title">Cenário 1</div>
-                        <div class="scenario-description">
-                            Interface de cadastro de material para treinamento da IA com sistema standalone de gerenciamento de conteúdo. Abordagem modular com menor complexidade de integração.
-                        </div>
-                        
-                        <div class="duration">⏱️ Duração: 3,5 meses + 15 dias de testes</div>
-                        <div class="price">R$ 80.000</div>
-                        
-                        <div class="phases">
-                            <div class="phase">
-                                <div class="phase-title">Fase 1: Planejamento</div>
-                                <div class="phase-details">
-                                    <span>Análise, arquitetura e prototipação</span>
-                                    <span class="phase-hours">80h</span>
-                                </div>
-                            </div>
-                            
-                            <div class="phase">
-                                <div class="phase-title">Fase 2: Desenvolvimento Backend</div>
-                                <div class="phase-details">
-                                    <span>API, banco de dados, integração ChatGPT</span>
-                                    <span class="phase-hours">440h</span>
-                                </div>
-                            </div>
-                            
-                            <div class="phase">
-                                <div class="phase-title">Fase 3: Desenvolvimento Frontend</div>
-                                <div class="phase-details">
-                                    <span>Interface de cadastro, chat e dashboard</span>
-                                    <span class="phase-hours">160h</span>
-                                </div>
-                            </div>
-                            
-                            <div class="phase">
-                                <div class="phase-title">Fase 4: Implementação Moodle</div>
-                                <div class="phase-details">
-                                    <span>Botão flutuante e integração visual</span>
-                                    <span class="phase-hours">80h</span>
-                                </div>
-                            </div>
-                            
-                            <div class="phase">
-                                <div class="phase-title">Testes Manuais</div>
-                                <div class="phase-details">
-                                    <span>Validação e ajustes finais</span>
-                                    <span class="phase-hours">40h</span>
-                                </div>
+                <div class="scenario-box">
+                    <div class="scenario-title">Solução Proposta</div>
+                    <div class="scenario-description">
+                        Interface de cadastro de material para treinamento da IA com sistema standalone de gerenciamento de conteúdo. Abordagem modular com integração eficiente ao Moodle, proporcionando uma solução completa e escalável para o apoio acadêmico aos alunos da Uniftec.
+                    </div>
+                    
+                    <div class="duration">⏱️ Duração: 3,5 meses + 15 dias de testes</div>
+                    <div class="price">R$ 49.500</div>
+                    
+                    <div class="phases">
+                        <div class="phase">
+                            <div class="phase-title">Fase 1: Planejamento</div>
+                            <div class="phase-details">
+                                <span>Análise, arquitetura e prototipação</span>
+                                <span class="phase-hours">80h</span>
                             </div>
                         </div>
                         
-                        <div class="total-section">
-                            <div class="total-label">Total de Horas</div>
-                            <div class="total-value">800 horas</div>
+                        <div class="phase">
+                            <div class="phase-title">Fase 2: Desenvolvimento Backend</div>
+                            <div class="phase-details">
+                                <span>API, banco de dados, integração ChatGPT</span>
+                                <span class="phase-hours">440h</span>
+                            </div>
                         </div>
                         
-                        <div class="features">
-                            <div class="feature">Sistema de cadastro de conteúdo</div>
-                            <div class="feature">Dashboard administrativo</div>
-                            <div class="feature">Treinamento de IA personalizado</div>
-                            <div class="feature">Chat inteligente no Moodle</div>
-                            <div class="feature">API RESTful completa</div>
-                            <div class="feature">Banco de dados PostgreSQL</div>
+                        <div class="phase">
+                            <div class="phase-title">Fase 3: Desenvolvimento Frontend</div>
+                            <div class="phase-details">
+                                <span>Interface de cadastro, chat e dashboard</span>
+                                <span class="phase-hours">160h</span>
+                            </div>
+                        </div>
+                        
+                        <div class="phase">
+                            <div class="phase-title">Fase 4: Implementação Moodle</div>
+                            <div class="phase-details">
+                                <span>Botão flutuante e integração visual</span>
+                                <span class="phase-hours">80h</span>
+                            </div>
+                        </div>
+                        
+                        <div class="phase">
+                            <div class="phase-title">Testes Manuais</div>
+                            <div class="phase-details">
+                                <span>Validação e ajustes finais</span>
+                                <span class="phase-hours">40h</span>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="scenario">
-                        <div class="scenario-title">Cenário 2</div>
-                        <div class="scenario-description">
-                            Integração profunda com Moodle via triggers de banco de dados. Sincronização automática em tempo real de todo conteúdo pedagógico. Maior complexidade técnica e robustez.
-                        </div>
-                        
-                        <div class="duration">⏱️ Duração: 6 meses + 15 dias de testes</div>
-                        <div class="price">R$ 120.000</div>
-                        
-                        <div class="phases">
-                            <div class="phase">
-                                <div class="phase-title">Fase 1: Planejamento</div>
-                                <div class="phase-details">
-                                    <span>Análise avançada, arquitetura de triggers</span>
-                                    <span class="phase-hours">120h</span>
-                                </div>
-                            </div>
-                            
-                            <div class="phase">
-                                <div class="phase-title">Fase 2: Desenvolvimento Backend</div>
-                                <div class="phase-details">
-                                    <span>API, triggers DB, sincronização Moodle</span>
-                                    <span class="phase-hours">620h</span>
-                                </div>
-                            </div>
-                            
-                            <div class="phase">
-                                <div class="phase-title">Fase 3: Desenvolvimento Frontend</div>
-                                <div class="phase-details">
-                                    <span>Interface avançada e monitoramento</span>
-                                    <span class="phase-hours">200h</span>
-                                </div>
-                            </div>
-                            
-                            <div class="phase">
-                                <div class="phase-title">Fase 4: Implementação Moodle</div>
-                                <div class="phase-details">
-                                    <span>Integração profunda e customização</span>
-                                    <span class="phase-hours">200h</span>
-                                </div>
-                            </div>
-                            
-                            <div class="phase">
-                                <div class="phase-title">Testes Manuais</div>
-                                <div class="phase-details">
-                                    <span>Validação completa e stress tests</span>
-                                    <span class="phase-hours">60h</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="total-section">
-                            <div class="total-label">Total de Horas</div>
-                            <div class="total-value">1200 horas</div>
-                        </div>
-                        
-                        <div class="features">
-                            <div class="feature">Sincronização automática total</div>
-                            <div class="feature">Triggers de banco avançados</div>
-                            <div class="feature">Atualização em tempo real</div>
-                            <div class="feature">Dashboard analítico completo</div>
-                            <div class="feature">Integração Moodle nativa</div>
-                            <div class="feature">Sistema de monitoramento</div>
-                        </div>
+                    <div class="total-section">
+                        <div class="total-label">Total de Horas</div>
+                        <div class="total-value">800 horas</div>
+                    </div>
+                    
+                    <div class="features">
+                        <div class="feature">Sistema de cadastro de conteúdo</div>
+                        <div class="feature">Dashboard administrativo</div>
+                        <div class="feature">Treinamento de IA personalizado</div>
+                        <div class="feature">Chat inteligente no Moodle</div>
+                        <div class="feature">API RESTful completa</div>
+                        <div class="feature">Banco de dados PostgreSQL</div>
                     </div>
                 </div>
             </div>
@@ -598,7 +515,7 @@
                 </div>
                 
                 <div class="description">
-                    <strong>⚙️ Fase 2 - Desenvolvimento Backend:</strong> Construção da API RESTful em Node.js, implementação do banco de dados PostgreSQL, integração com a API do ChatGPT, desenvolvimento do sistema de processamento e indexação de conteúdo, criação de endpoints de autenticação e autorização, e implementação de triggers (Cenário 2).
+                    <strong>⚙️ Fase 2 - Desenvolvimento Backend:</strong> Construção da API RESTful em Node.js, implementação do banco de dados PostgreSQL, integração com a API do ChatGPT, desenvolvimento do sistema de processamento e indexação de conteúdo, e criação de endpoints de autenticação e autorização.
                 </div>
                 
                 <div class="description">
